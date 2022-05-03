@@ -26,12 +26,10 @@ main .city{
     background-color: #f3f3f3;
     text-align: center;
     padding: 8px;
-}
-h2{
-    padding: 8px;
-}
-.city{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+h2{
+    padding: 8px;
 }
