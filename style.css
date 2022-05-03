@@ -1,65 +1,71 @@
 /*POLICE*/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 /*GENERAL*/
 *, ::before, ::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
-    margin: 0px;
-    font-family: "Roboto", "sans serif";
+
+body {
+  margin: 0px;
+  font-family: "Roboto", "sans serif";
 }
 
 /*HEADER*/
-header{
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    box-shadow: 0 3px 3px 1px grey;
-    padding: 3px;
-    margin: 0;
-    position: relative;
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 3px 3px 1px grey;
+  padding: 3px;
+  margin: 0;
+  position: relative;
 }
 
 /*MAIN*/
-main .city{
-    background-color: #f3f3f3;
-    text-align: center;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main .city {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-h2{
-    padding: 8px;
+
+h2 {
+  padding: 8px;
 }
 
 /* TITLE */
-.main_title{
-    text-align: center;
-}
-.main_title h2{
-    margin-top: 16px;
-    font-size: 28px;
-}
-.main_title p{
-    font-size: 14px;
-}
-/* BUTTON */
-.main_title button{
-    margin-top: 10px;
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
-    color: white;
-    font-weight: 400;
-    font-size: 22px;
-    padding: 16px 32px;
-    box-shadow: 2px 3px 13px -1px #000;
-    border: none;
-    border-radius: 40px;
-}
-.main_title button:hover{
-    transform: scale(1.03);
-    transition: all 200ms;
-    opacity: 0.9;
+.main_title {
+  text-align: center;
 }
 
+.main_title h2 {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.main_title p {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.main_title button {
+  margin-top: 10px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 16px 32px;
+  box-shadow: 2px 3px 13px -1px #000;
+  border: none;
+  border-radius: 40px;
+}
+
+.main_title button:hover {
+  transform: scale(1.03);
+  transition: all 200ms;
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */
