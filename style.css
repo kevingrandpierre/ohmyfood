@@ -1,0 +1,18 @@
+/*POLICE*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/*GENERAL*/
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+/*HEADER*/
+header{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0 3px 3px 1px grey;
+}
