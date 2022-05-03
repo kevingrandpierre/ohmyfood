@@ -8,6 +8,7 @@
 }
 body{
     margin: 0px;
+    font-family: "Roboto", "sans serif";
 }
 
 /*HEADER*/
@@ -15,4 +16,22 @@ header{
     font-family: 'Shrikhand', cursive;
     text-align: center;
     box-shadow: 0 3px 3px 1px grey;
+    padding: 3px;
+    margin: 0;
+    position: relative;
+}
+
+/*MAIN*/
+main .city{
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 8px;
+}
+h2{
+    padding: 8px;
+}
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
