@@ -4,7 +4,7 @@
   "description": "projet 3 openclassroom",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scsss style.css"
+    "sass": "sass --watch style.scss style.css"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "homepage": "https://github.com/kgp82/ohmyfood#readme",
   "devDependencies": {
     "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^5.0.0",
+    "gulp-sass": "^5.1.0"
   }
 }

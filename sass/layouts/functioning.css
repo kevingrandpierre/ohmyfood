@@ -1,0 +1,1 @@
+.functioning ol{display:flex;gap:16px}@media(max-width: 800px){.functioning ol{flex-direction:column}}.functioning li{background-color:#f2f2f2;padding:16px 30px;border:1px solid pink;flex-grow:1;border-radius:16px}.functioning li:hover{transform:scale(1.03)}
