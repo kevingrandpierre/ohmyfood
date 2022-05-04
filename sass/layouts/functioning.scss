@@ -1,22 +1,42 @@
 @import "../utils/zoom.scss";
 @import "../utils/box-shadow.scss";
+@import "../utils/color.scss";
 
 .functioning{
+    counter-reset: number;
     & ol{
-        @media(max-width:800px) {
+        @media(max-width:1000px) {
         flex-direction: column;
         }
         display: flex;
-        gap: 16px;
+        gap: 30px;
     }
     & li{
-        background-color: #f2f2f2;
-        padding: 16px 30px;
-        border: 1px solid pink;
+        list-style-type: none;
+        position: relative;
+        &::before{content: counter(number) ;
+            position: absolute;
+            bottom: 10px;
+            left:-15px;
+            counter-increment: number;
+            color: white;
+            background-color: $color-primary;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        background-color: $light-grey;
+        padding: 20px 20px;
+        
         flex-grow: 1;
         border-radius: 16px;
+        @include box-shadow;
         &:hover{
             @include zoom;
         }
+    }
+    & i.fas {
+        margin-right: 16px;
+        background-color: $light-grey;
+        font-size: 28px;
     }
 }
