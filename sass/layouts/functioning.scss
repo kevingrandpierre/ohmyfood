@@ -4,6 +4,7 @@
 
 .functioning{
     counter-reset: number;
+    margin-bottom: 30px;
     & ol{
         @media(max-width:1000px) {
         flex-direction: column;
@@ -14,9 +15,11 @@
     & li{
         list-style-type: none;
         position: relative;
-        &::before{content: counter(number) ;
+        &::before{
+            content: counter(number) ;
             position: absolute;
-            bottom: 10px;
+            top: 50%;
+            transform: translateY(-50%);
             left:-15px;
             counter-increment: number;
             color: white;
