@@ -72,7 +72,7 @@ h2 {
 
 .functioning {
   counter-reset: number;
-  margin-bottom: 30px;
+  margin: 0 30px 30px 30px;
 }
 .functioning ol {
   display: flex;
@@ -113,13 +113,6 @@ h2 {
   font-size: 28px;
 }
 
-.menus_cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-}
-
 .menus {
   flex-basis: 33%;
   background-color: rgba(167, 167, 167, 0.431372549);
@@ -132,7 +125,19 @@ h2 {
   }
 }
 .menus h2 {
-  margin-bottom: 30px;
+  margin: 0 0 30px 30px;
+}
+.menus .menus_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0 30px;
+}
+@media (max-width: 800px) {
+  .menus .menus_cards {
+    margin: 0;
+  }
 }
 .menus .card {
   position: relative;
@@ -161,6 +166,11 @@ h2 {
 
 footer {
   background-color: rgb(87, 87, 87);
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+footer i {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

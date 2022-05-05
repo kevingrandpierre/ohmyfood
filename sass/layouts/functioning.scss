@@ -3,8 +3,9 @@
 @import "../utils/color.scss";
 
 .functioning{
+
     counter-reset: number;
-    margin-bottom: 30px;
+    margin: 0 30px 30px 30px;
     & ol{
         @media(max-width:1000px) {
         flex-direction: column;
