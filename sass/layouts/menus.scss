@@ -8,6 +8,8 @@
 .menus{
     @media(max-width:800px){
         columns: 1fr;
+        margin: 0;
+        padding: 0 20px;
     }
     flex-basis: 33%;
     background-color: $light-grey;
@@ -37,11 +39,11 @@
     p{
         margin-top: -15px;
     }
-    span{
-        position: absolute;
-        left: 580px;
-        top: 180px;
-        font-size: x-large;
-    }
+    // span{
+    //     position: absolute;
+    //     left: 580px;
+    //     top: 180px;
+    //     font-size: x-large;
+    // }
     }
 }
