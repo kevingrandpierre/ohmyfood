@@ -11,8 +11,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
-a {
+body h1, body h2, body h3 {
+  font-family: "Shrikhand", "sans serif";
+}
+body a {
   text-decoration: none;
   color: inherit;
 }
