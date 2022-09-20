@@ -25,6 +25,7 @@
         @include box-shadow;
         border: none;
         border-radius: 40px;
+        cursor: pointer;
     }
     & button:hover{
         @include zoom;

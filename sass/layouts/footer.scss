@@ -1,8 +1,16 @@
 footer{
     background-color: rgb(87, 87, 87);
     padding: 0 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    h2{
+        margin-left: -10px;
+    }
     i{
         padding-right: 10px;
+        cursor: pointer;
     }    
+    p{
+        cursor: pointer;   
+        width: 45%;
+    }
 }

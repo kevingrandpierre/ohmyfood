@@ -6,30 +6,85 @@ img{
     object-fit: cover;
 }
 #menu_restaurant{
-    & i.far{
-        padding-left: 97%;}
+    .title_menu_restaurant{
+        position: relative;
+        i{
+            font-size: 30px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            &.fas{
+                background-clip: text;
+                background-image: linear-gradient(to top, $color-primary, $color-secondary);
+                -webkit-background-clip: text;
+                color: transparent;
+                opacity: 0;
+                transition: all 300ms;
+            }
+            &.fas:hover {
+                opacity: 1;
+                transform: scale(1.13);
+            }
+        }
     }   
-
+}
 .menus{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    
     @media (max-width:800px){
         grid-template-columns: 1fr;
     }
     .menu-item{
         display: flex;
+        
         background-color: white;
         border-radius: 20px;
         margin: 20px 20px 20px 0;
         height: 70px;
-        @include box-shadow
+        overflow: hidden;
+        @include box-shadow;
+        cursor: pointer;
     }
+    
+    .menu-item{
+        .menu_price{
+            margin-left: auto;
+                  font-weight: 900;
+                  padding: 20px 20px 0 0;
+                  margin-bottom: 10px;
+                  display: flex;
+                  align-items: flex-end;
+                  
+                }
+                .menu_tick{
+                    background: $color-tertiary;
+                    width: 55px;
+                    display: grid;
+                    place-items: center;
+                    margin-right: -56px;
+                    i{
+                        display: grid;
+                        place-items: center;
+                        background: white;
+                        border-radius: 50%;
+                        width: 25px;
+                        height: 25px;
+                        color: $color-tertiary;
+                    }
+                }
+                &:hover .menu_tick{
+                    margin-right: 0;
+                }
+    }.menu_tick:hover {
+        margin-right: 0;
+    }
+    
     .menu_description{
         overflow: hidden;
         margin-top: -10px;
         padding: 0 10px;
-        overflow: hidden;
     }
     p{
         margin-top: -20px;
@@ -40,6 +95,37 @@ img{
           padding: 20px;
           display: flex;
           align-items: flex-end;
+          
+        }
+        .menu_tick{
+            background: $color-tertiary;
+            width: 45px;
+            display: grid;
+            place-items: center;
+            margin-right: -46px;
+            
+        }
+}
+.button{
+    display: flex;
+        justify-content: flex-start;
+        justify-items: center;
+    button{
+        margin: 20px 0 50px 0;
+        background-image: linear-gradient(to top, $color-primary, $color-secondary);
+        color: white;
+        font-weight: 400;
+        font-size: 22px;
+        padding: 16px 32px;
+        @include box-shadow;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        
     }
-    
+    & button:hover{
+        @include zoom;
+        transition: all 200ms;
+        opacity: 0.9;
+    }
 }
