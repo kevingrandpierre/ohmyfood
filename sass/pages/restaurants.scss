@@ -1,5 +1,27 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/color.scss";
+
+
+// loader 
+.loader{
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 1;
+    animation: disappear 500ms 2s forwards;
+    display: grid;
+    place-items: center;
+}
+@keyframes disappear {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
 img{
     width: 100%;
     height: 60vh;
