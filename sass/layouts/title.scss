@@ -7,12 +7,14 @@
 /* TITLE */
 .main_title{
     text-align: center;
+    margin-top: 60px;
     & h2{
         margin-top: 16px;
         font-size: 28px;
     }
     & p{
-        font-size: 14px;
+        font-size: 24px;
+        font-weight: 300;
     }
     /* BUTTON */
     & button{

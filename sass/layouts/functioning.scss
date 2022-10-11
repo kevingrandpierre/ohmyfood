@@ -3,15 +3,18 @@
 @import "../utils/color.scss";
 
 .functioning{
-
     counter-reset: number;
-    margin: 0 30px 30px 30px;
+    margin: 120px 0 0 0;
+    padding: 50px 30px 100px 30px;
+    background: white;
+
     & ol{
-        @media(max-width:1000px) {
-        flex-direction: column;
-        }
         display: flex;
         gap: 30px;
+        @media(max-width:1000px) {
+            flex-direction: column;
+            padding-left: 0;
+        }
     }
     & li{
         list-style-type: none;

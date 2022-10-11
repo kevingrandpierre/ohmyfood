@@ -1,9 +1,21 @@
 /*HEADER*/
 header{
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Shrikhand', sans-serif;
     text-align: center;
     box-shadow: 0 3px 3px 1px grey;
     padding: 3px;
     margin: 0;
     position: relative;
+    font-weight: 900;
+    font-size: 20px;
+    a{
+        font-size: 20px;
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        left: 45px;
+    }
 }

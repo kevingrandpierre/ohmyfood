@@ -6,27 +6,40 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   font-family: "Roboto", "sans serif";
   margin: 0;
   padding: 0;
+  background: #fafafa;
 }
-body h1, body h2, body h3 {
+body h1, html h1 {
   font-family: "Shrikhand", "sans serif";
 }
-body a {
+body a, html a {
   text-decoration: none;
   color: inherit;
 }
 
 /*HEADER*/
 header {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
   text-align: center;
   box-shadow: 0 3px 3px 1px grey;
   padding: 3px;
   margin: 0;
   position: relative;
+  font-weight: 900;
+  font-size: 20px;
+}
+header a {
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  left: 45px;
 }
 
 /*MAIN*/
@@ -46,6 +59,7 @@ h2 {
 /* TITLE */
 .main_title {
   text-align: center;
+  margin-top: 60px;
   /* BUTTON */
 }
 .main_title h2 {
@@ -53,7 +67,8 @@ h2 {
   font-size: 28px;
 }
 .main_title p {
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 300;
 }
 .main_title button {
   margin-top: 10px;
@@ -75,7 +90,9 @@ h2 {
 
 .functioning {
   counter-reset: number;
-  margin: 0 30px 30px 30px;
+  margin: 120px 0 0 0;
+  padding: 50px 30px 100px 30px;
+  background: white;
 }
 .functioning ol {
   display: flex;
@@ -84,6 +101,7 @@ h2 {
 @media (max-width: 1000px) {
   .functioning ol {
     flex-direction: column;
+    padding-left: 0;
   }
 }
 .functioning li {
@@ -124,100 +142,108 @@ h2 {
   .menus {
     columns: 1fr;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 40px;
     background: var(rgba(167, 167, 167, 0.431372549));
   }
+  .menus .menus_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 30px;
+  }
 }
-.menus h2 {
-  margin: 0 0 30px 30px;
-}
-.menus .menus_cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  margin: 0 30px;
-}
-@media (max-width: 800px) {
+@media (max-width: 800px) and (max-width: 800px) {
   .menus .menus_cards {
     margin: 0;
   }
 }
-.menus .menus_cards .new {
-  position: relative;
+@media (max-width: 800px) {
+  .menus .menus_cards .new {
+    position: relative;
+  }
 }
-.menus .menus_cards .new::before {
-  content: "Nouveau";
-  position: absolute;
-  height: 30px;
-  width: 80px;
-  background: #99e2d0;
-  display: grid;
-  place-items: center;
-  right: 15px;
-  top: 15px;
+@media (max-width: 800px) {
+  .menus .menus_cards .new::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    background: #99e2d0;
+    display: grid;
+    place-items: center;
+    right: 15px;
+    top: 15px;
+  }
 }
-.menus .card {
-  box-shadow: 2px 3px 13px -1px #000;
-  margin-bottom: 20px;
-  position: relative;
-  height: 350px;
-  width: 400px;
-  flex-grow: 1;
-  min-width: 300px;
-  background-color: white;
-  border-radius: 30px;
-  position: relative;
-}
-.menus .card img {
-  height: 260px;
-  width: 100%;
-  object-position: center;
-  border-radius: 20px 20px 0 0;
-}
-.menus .card h3, .menus .card p {
-  padding-left: 15px;
-  margin-top: 12px;
-  color: black;
-  text-decoration: none;
-}
-.menus .card p {
-  margin-top: -15px;
-}
-.menus .card i {
-  font-size: 30px;
-  position: absolute;
-  top: 285px;
-  right: 15px;
-}
-.menus .card i.fas {
-  background-clip: text;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0;
-  transition: all 300ms;
-}
-.menus .card i.fas:hover {
-  opacity: 1;
-  transform: scale(1.13);
+@media (max-width: 800px) {
+  .menus .card {
+    box-shadow: 2px 3px 13px -1px #000;
+    margin-bottom: 20px;
+    position: relative;
+    height: 350px;
+    width: 400px;
+    flex-grow: 1;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+  }
+  .menus .card img {
+    height: 260px;
+    width: 100%;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+  }
+  .menus .card h3, .menus .card p {
+    padding-left: 15px;
+    margin-top: 12px;
+    color: black;
+    text-decoration: none;
+  }
+  .menus .card p {
+    margin-top: -15px;
+  }
+  .menus .card i {
+    font-size: 30px;
+    position: absolute;
+    top: 285px;
+    right: 15px;
+  }
+  .menus .card i.fas {
+    background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: all 300ms;
+  }
+  .menus .card i.fas:hover {
+    opacity: 1;
+    transform: scale(1.13);
+  }
 }
 
 footer {
   background-color: rgb(87, 87, 87);
-  padding: 0 20px;
-  padding-bottom: 5px;
+  padding: 20px;
+  margin-top: 80px;
 }
 footer h2 {
-  margin-left: -10px;
+  font-family: "Shrikhand", "sans serif";
+  font-size: 28px;
+  color: white;
+  margin-top: 10px;
 }
 footer i {
   padding-right: 10px;
   cursor: pointer;
+  color: white;
 }
 footer p {
   cursor: pointer;
   width: 45%;
+  color: white;
 }
 
 .category1 {
@@ -273,12 +299,6 @@ footer p {
     transform: scale(0);
   }
 }
-.header_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 img {
   width: 100%;
   height: 60vh;
@@ -287,6 +307,9 @@ img {
 
 #menu_restaurant .title_menu_restaurant {
   position: relative;
+}
+#menu_restaurant .title_menu_restaurant h2 {
+  font-family: "Shrikhand", "sans serif";
 }
 #menu_restaurant .title_menu_restaurant i {
   font-size: 30px;
@@ -308,9 +331,9 @@ img {
 }
 
 .menus {
+  padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
 }
 @media (max-width: 800px) {
   .menus {
@@ -382,7 +405,7 @@ img {
 
 .button {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   justify-items: center;
 }
 .button button {
@@ -391,13 +414,13 @@ img {
   color: white;
   font-weight: 400;
   font-size: 22px;
-  padding: 16px 32px;
+  padding: 16px 52px;
   box-shadow: 2px 3px 13px -1px #000;
   border: none;
   border-radius: 40px;
   cursor: pointer;
 }
-.button button:hover {
+.button :hover {
   transform: scale(1.03);
   transition: all 200ms;
   opacity: 0.9;
