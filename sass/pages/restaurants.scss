@@ -28,7 +28,7 @@
 .loader{
     position: fixed;
     background: #ffffff;
-    height: 100vh;
+    height: 100%;
     inset: 0;
     z-index: 1;
     opacity: 0.9;
@@ -85,9 +85,14 @@ img{
 .menus{
     padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    @media (max-width:800px){
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    @media (min-width:801px){
+        margin-left: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width:1200px){
+        margin-left: 30px;
+        grid-template-columns: repeat(3, 1fr);
     }
     .menu-item{
         display: flex;
@@ -143,11 +148,11 @@ img{
         margin-top: -20px;
     }
     .menu_price{
-    margin-left: auto;
-          font-weight: 900;
-          padding: 20px;
-          display: flex;
-          align-items: flex-end;
+        margin-left: auto;
+      font-weight: 900;
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
           
         }
         .menu_tick{
@@ -161,10 +166,15 @@ img{
 }
 .button{
     display: flex;
-        justify-content: center;
-        justify-items: center;
+    justify-content: center;
+    @media (min-width:801px){
+        margin-top: 80px;
+    }
+    @media (min-width:1200px){
+        width: 300%;
+    }
     button{
-        margin: 20px 0 50px 0;
+        margin: 50px 0;
         background-image: linear-gradient(to top, $color-primary, $color-secondary);
         color: white;
         font-weight: 400;
@@ -174,6 +184,12 @@ img{
         border: none;
         border-radius: 40px;
         cursor: pointer;
+        @media (min-width:1200px){
+            font-weight: 900;
+            width: 80%;
+            margin: 0 50px;
+            height: 150%;
+        }
     }
     & :hover{
         @include zoom;
