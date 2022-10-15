@@ -145,83 +145,98 @@ h2 {
     padding: 0 40px;
     background: var(rgba(167, 167, 167, 0.431372549));
   }
+}
+.menus .menus_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0 30px;
+  margin: 0;
+  margin: 0;
+}
+@media (min-width: 801px) {
   .menus .menus_cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-    margin: 0 30px;
-  }
-}
-@media (max-width: 800px) and (max-width: 800px) {
-  .menus .menus_cards {
-    margin: 0;
-  }
-}
-@media (max-width: 800px) {
-  .menus .menus_cards .new {
-    position: relative;
-  }
-}
-@media (max-width: 800px) {
-  .menus .menus_cards .new::before {
-    content: "Nouveau";
-    position: absolute;
-    height: 30px;
-    width: 80px;
-    background: #99e2d0;
     display: grid;
-    place-items: center;
-    right: 15px;
-    top: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    margin-top: 150px;
   }
 }
-@media (max-width: 800px) {
-  .menus .card {
-    box-shadow: 2px 3px 13px -1px #000;
-    margin-bottom: 20px;
-    position: relative;
-    height: 350px;
-    width: 400px;
-    flex-grow: 1;
-    min-width: 300px;
-    background-color: white;
-    border-radius: 30px;
-    position: relative;
+@media (min-width: 1200px) {
+  .menus .menus_cards {
+    grid-template-columns: 1fr;
+    gap: 1%;
   }
-  .menus .card img {
-    height: 260px;
-    width: 100%;
-    object-position: center;
-    border-radius: 20px 20px 0 0;
+}
+.menus .menus_cards .new {
+  position: relative;
+}
+.menus .menus_cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  background: #99e2d0;
+  display: grid;
+  place-items: center;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 2px 3px 13px -1px #000;
+  margin-bottom: 20px;
+  position: relative;
+  height: 350px;
+  width: 400px;
+  flex-grow: 1;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .card {
+    width: 200%;
+    margin-left: -250px;
   }
-  .menus .card h3, .menus .card p {
-    padding-left: 15px;
-    margin-top: 12px;
-    color: black;
-    text-decoration: none;
-  }
-  .menus .card p {
-    margin-top: -15px;
-  }
-  .menus .card i {
-    font-size: 30px;
-    position: absolute;
-    top: 285px;
-    right: 15px;
-  }
-  .menus .card i.fas {
-    background-clip: text;
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0;
-    transition: all 300ms;
-  }
-  .menus .card i.fas:hover {
-    opacity: 1;
-    transform: scale(1.13);
-  }
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  height: 260px;
+  width: 100%;
+  object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+.card h3, .card p {
+  padding-left: 15px;
+  margin-top: 12px;
+  color: black;
+  text-decoration: none;
+}
+.card p {
+  margin-top: -15px;
+}
+.card i {
+  font-size: 30px;
+  position: absolute;
+  top: 285px;
+  right: 15px;
+}
+.card i.fas {
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 300ms;
+}
+.card i.fas:hover {
+  opacity: 1;
+  transform: scale(1.13);
 }
 
 footer {

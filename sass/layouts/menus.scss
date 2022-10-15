@@ -1,38 +1,49 @@
 @import "../utils/color.scss";
 .menus{
     flex-basis: 33%;
-    @media(max-width:800px){
+    @media(max-width:800px) {
         columns: 1fr;
         margin: 0;
         padding: 0 40px;
         background: var($light-grey);
-
+    }
 
     .menus_cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 10px;
-        margin: 0 30px;
-        @media(max-width:800px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            margin: 0 30px;
             margin: 0 ;
+            margin: 0;
+        @media(min-width:801px){
+           display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10%;
+            margin-top: 150px;
         }
-        .new{
-            position: relative;
+        @media(min-width:1200px){
+            grid-template-columns: 1fr;
+            gap: 1%;
         }
-        .new::before{
-            content: "Nouveau";
-            position: absolute;
-            height: 30px;
-            width: 80px;
-            background: $color-tertiary;
-            display: grid;
-            place-items: center;
-            right: 15px;
-            top: 15px;
-        }
+    .new{
+        position: relative;
     }
-    .card{ 
+    .new::before{
+        content: "Nouveau";
+        position: absolute;
+        height: 30px;
+        width: 80px;
+        background: $color-tertiary;
+        display: grid;
+        place-items: center;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+    }
+    }
+    }
+    .card{
         @include box-shadow;
         margin-bottom: 20px;
         position: relative;
@@ -43,29 +54,35 @@
         background-color: white;
         border-radius: 30px;
         position: relative;
+        @media(min-width:1200px){
+            width: 200%;
+            margin-left: -250px;
+        }
+        &:hover{
+            @include zoom;
+        }
         & img{
             height: 260px;
             width: 100%;
             object-position: center;
             border-radius: 20px 20px 0 0;
-    }
-    h3, p{
+        }
+        h3, p{
         padding-left: 15px;
         margin-top: 12px;
         color: black;
         text-decoration: none;
 
     }
-    p{
+        p{
         margin-top: -15px;
     }
-    i{
+        i{
         font-size: 30px;
         position: absolute;
         top: 285px;
         right: 15px;
         &.fas{
-            background-clip: text;
             background-image: linear-gradient(to top, $color-primary, $color-secondary);
             -webkit-background-clip: text;
             color: transparent;
@@ -78,5 +95,4 @@
         }
     }
     }
-}
-}
+
