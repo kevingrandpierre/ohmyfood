@@ -16,12 +16,12 @@
            display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10%;
-            margin: 150px 200px 0 0;
+            margin: 100px 200px 50px -100px;
         }
         @media(min-width:1200px){
             grid-template-columns: 1fr;
             gap: 1%;
-            width: 100%;
+            width: 130%;
         }
     .new{
         position: relative;
