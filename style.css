@@ -137,36 +137,31 @@ h2 {
 
 .menus {
   flex-basis: 33%;
-}
-@media (max-width: 800px) {
-  .menus {
-    columns: 1fr;
-    margin: 0;
-    padding: 0 40px;
-    background: var(rgba(167, 167, 167, 0.431372549));
-  }
+  columns: 1fr;
+  padding: 0 40px;
+  background: var(rgba(167, 167, 167, 0.431372549));
+  /* @media(max-width:800px) {
+   }*/
 }
 .menus .menus_cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 10px;
-  margin: 0 30px;
-  margin: 0;
-  margin: 0;
 }
 @media (min-width: 801px) {
   .menus .menus_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10%;
-    margin-top: 150px;
+    margin: 150px 200px 0 0;
   }
 }
 @media (min-width: 1200px) {
   .menus .menus_cards {
     grid-template-columns: 1fr;
     gap: 1%;
+    width: 100%;
   }
 }
 .menus .menus_cards .new {
@@ -336,7 +331,7 @@ img {
 #menu_restaurant .title_menu_restaurant i {
   font-size: 30px;
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 15px;
 }
 #menu_restaurant .title_menu_restaurant i.fas {
