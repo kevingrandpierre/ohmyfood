@@ -4,8 +4,6 @@
     columns: 1fr;
     padding: 0 40px;
     background: var($light-grey);
-   /* @media(max-width:800px) {
-    }*/
 
     .menus_cards{
             display: flex;
@@ -16,12 +14,14 @@
            display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10%;
-            margin: 100px 200px 50px -100px;
+            margin: 100px 200px 50px -55px;
+            width: 85%;
         }
         @media(min-width:1200px){
             grid-template-columns: 1fr;
             gap: 1%;
             width: 130%;
+            margin-left: -100px;
         }
     .new{
         position: relative;
@@ -51,6 +51,10 @@
         background-color: white;
         border-radius: 30px;
         position: relative;
+        @media(min-width:801px){
+            width: 100%;
+            height: 100%;
+        }
         @media(min-width:1200px){
             width: 200%;
             margin-left: -250px;

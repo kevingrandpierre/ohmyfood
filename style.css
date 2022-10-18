@@ -98,7 +98,7 @@ h2 {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .functioning ol {
     flex-direction: column;
     padding-left: 0;
@@ -140,8 +140,6 @@ h2 {
   columns: 1fr;
   padding: 0 40px;
   background: var(rgba(167, 167, 167, 0.431372549));
-  /* @media(max-width:800px) {
-   }*/
 }
 .menus .menus_cards {
   display: flex;
@@ -154,7 +152,8 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10%;
-    margin: 100px 200px 50px -100px;
+    margin: 100px 200px 50px -55px;
+    width: 85%;
   }
 }
 @media (min-width: 1200px) {
@@ -162,6 +161,7 @@ h2 {
     grid-template-columns: 1fr;
     gap: 1%;
     width: 130%;
+    margin-left: -100px;
   }
 }
 .menus .menus_cards .new {
@@ -191,6 +191,12 @@ h2 {
   background-color: white;
   border-radius: 30px;
   position: relative;
+}
+@media (min-width: 801px) {
+  .card {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (min-width: 1200px) {
   .card {
