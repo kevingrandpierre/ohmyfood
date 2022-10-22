@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="modify responsive">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layouts/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layouts/functioning.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/functioning.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layouts/menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/menus.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/pages/restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/restaurants.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-    </list>
+    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="modify size of media queries for desktop and tablet&#10;modify tag in index.html menus -&gt; restaurant" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +58,7 @@
       <workItem from="1665837785102" duration="11113000" />
       <workItem from="1665913039734" duration="4699000" />
       <workItem from="1666130398600" duration="1435000" />
-      <workItem from="1666451229304" duration="5016000" />
+      <workItem from="1666451229304" duration="5319000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -124,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666131789850</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="modify size of media queries for desktop and tablet&#10;modify tag in index.html menus -&gt; restaurant">
+      <created>1666459397586</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666459397586</updated>
+    </task>
+    <task id="LOCAL-00010" summary="modify size of media queries for desktop and tablet&#10;modify tag in index.html menus -&gt; restaurant">
+      <created>1666459452200</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666459452200</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +153,9 @@
     <MESSAGE value="add media queries for smartphone and tablet" />
     <MESSAGE value="add border-radius on the title of the restaurant" />
     <MESSAGE value="modify responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify responsive" />
+    <MESSAGE value="modify size of media queries for desktop and tablet" />
+    <MESSAGE value="modify size of media queries for desktop and tablet&#10;modify tag in index.html menus -&gt; restaurant" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify size of media queries for desktop and tablet&#10;modify tag in index.html menus -&gt; restaurant" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
