@@ -89,11 +89,11 @@ img{
     padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
-    @media (min-width:801px){
+    @media (min-width:768px){
         margin-left: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
-    @media (min-width:1200px){
+    @media (min-width:960px){
         margin-left: 30px;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -170,10 +170,10 @@ img{
 .button{
     display: flex;
     justify-content: center;
-    @media (min-width:801px){
+    @media (min-width:768px){
         margin-top: 80px;
     }
-    @media (min-width:1200px){
+    @media (min-width:960px){
         width: 300%;
     }
     button{
@@ -187,7 +187,7 @@ img{
         border: none;
         border-radius: 40px;
         cursor: pointer;
-        @media (min-width:1200px){
+        @media (min-width:960px){
             font-weight: 900;
             width: 80%;
             margin: 0 50px;

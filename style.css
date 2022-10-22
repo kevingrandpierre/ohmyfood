@@ -98,7 +98,7 @@ h2 {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 960px) {
   .functioning ol {
     flex-direction: column;
     padding-left: 0;
@@ -135,39 +135,46 @@ h2 {
   font-size: 28px;
 }
 
-.menus {
+.restaurant {
   flex-basis: 33%;
   columns: 1fr;
-  padding: 0 40px;
+  margin-left: 10px;
   background: var(rgba(167, 167, 167, 0.431372549));
 }
-.menus .menus_cards {
+.restaurant h2 {
+  margin-left: 10px;
+  width: 30%;
+}
+.restaurant .menus_cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 10px;
+  width: 98%;
+  margin-bottom: 20px;
 }
-@media (min-width: 801px) {
-  .menus .menus_cards {
+@media (min-width: 768px) {
+  .restaurant .menus_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10%;
-    margin: 100px 200px 50px -55px;
-    width: 85%;
+    gap: 5%;
+    margin: 100px 10px 50px 0;
+    width: 98%;
   }
 }
-@media (min-width: 1200px) {
-  .menus .menus_cards {
+@media (min-width: 960px) {
+  .restaurant .menus_cards {
     grid-template-columns: 1fr;
-    gap: 1%;
-    width: 130%;
-    margin-left: -100px;
+    gap: 25px;
+    width: 80%;
+    margin: inherit;
+    margin-left: 330px;
   }
 }
-.menus .menus_cards .new {
+.restaurant .menus_cards .new {
   position: relative;
 }
-.menus .menus_cards .new::before {
+.restaurant .menus_cards .new::before {
   content: "Nouveau";
   position: absolute;
   height: 30px;
@@ -185,22 +192,22 @@ h2 {
   margin-bottom: 20px;
   position: relative;
   height: 350px;
-  width: 400px;
+  width: 100%;
   flex-grow: 1;
   min-width: 300px;
   background-color: white;
   border-radius: 30px;
   position: relative;
 }
-@media (min-width: 801px) {
+@media (min-width: 768px) {
   .card {
     width: 100%;
     height: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .card {
-    width: 200%;
+    width: 100%;
     margin-left: -250px;
   }
 }
@@ -244,6 +251,10 @@ footer {
   background-color: rgb(87, 87, 87);
   padding: 20px;
   margin-top: 80px;
+  width: 100%;
+  /* @media screen and (min-width: 768px){
+       width: 103%;
+   }*/
 }
 footer h2 {
   font-family: "Shrikhand", "sans serif";
@@ -357,13 +368,13 @@ img {
   display: grid;
   grid-template-columns: 1fr;
 }
-@media (min-width: 801px) {
+@media (min-width: 768px) {
   .menus {
     margin-left: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .menus {
     margin-left: 30px;
     grid-template-columns: repeat(3, 1fr);
@@ -436,12 +447,12 @@ img {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 801px) {
+@media (min-width: 768px) {
   .button {
     margin-top: 80px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .button {
     width: 300%;
   }
@@ -458,7 +469,7 @@ img {
   border-radius: 40px;
   cursor: pointer;
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .button button {
     font-weight: 900;
     width: 80%;
