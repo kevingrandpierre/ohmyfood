@@ -51,8 +51,7 @@ header a {
   align-items: center;
   justify-content: center;
 }
-
-h2 {
+.city h2 {
   padding: 8px;
 }
 
@@ -166,7 +165,7 @@ h2 {
   .restaurant .menus_cards {
     grid-template-columns: 1fr;
     gap: 25px;
-    width: 80%;
+    width: 90%;
     margin: inherit;
     margin-left: 330px;
   }
@@ -252,9 +251,6 @@ footer {
   padding: 20px;
   margin-top: 80px;
   width: 100%;
-  /* @media screen and (min-width: 768px){
-       width: 103%;
-   }*/
 }
 footer h2 {
   font-family: "Shrikhand", "sans serif";
@@ -342,9 +338,6 @@ img {
 #menu_restaurant .title_menu_restaurant {
   padding: 10px 0 0 20px;
 }
-#menu_restaurant .title_menu_restaurant h2 {
-  font-family: "Shrikhand", "sans serif";
-}
 #menu_restaurant .title_menu_restaurant i {
   font-size: 30px;
   position: absolute;
@@ -367,6 +360,7 @@ img {
   padding-top: 40px;
   display: grid;
   grid-template-columns: 1fr;
+  margin-left: 20px;
 }
 @media (min-width: 768px) {
   .menus {

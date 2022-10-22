@@ -63,9 +63,7 @@ img{
     background: white;
     .title_menu_restaurant{
         padding: 10px 0 0 20px;
-        h2{
-            font-family: "Shrikhand", "sans serif";
-        }
+
         i{
             font-size: 30px;
             position: absolute;
@@ -89,6 +87,7 @@ img{
     padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 20px;
     @media (min-width:768px){
         margin-left: 30px;
         grid-template-columns: repeat(2, 1fr);
