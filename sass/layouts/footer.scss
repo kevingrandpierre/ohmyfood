@@ -4,18 +4,18 @@ footer{
     margin-top: 80px;
     width: 100%;
 
-    h2{
+    & h2{
         font-family: "Shrikhand", "sans serif";
         font-size: 28px;
         color: white;
         margin-top: 10px;
     }
-    i{
+    & i{
         padding-right: 10px;
         cursor: pointer;
         color: white;
     }    
-    p{
+    & p{
         cursor: pointer;   
         width: 45%;
         color: white;

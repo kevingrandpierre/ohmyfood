@@ -81,7 +81,7 @@ img{
                 transform: scale(1.13);
             }
         }
-    }   
+    }
 }
 .menus{
     padding-top: 40px;
@@ -98,7 +98,7 @@ img{
     }
     .menu-item{
         display: flex;
-        
+
         background-color: white;
         border-radius: 20px;
         margin: 20px 20px 20px 0;
@@ -107,7 +107,7 @@ img{
         @include box-shadow;
         cursor: pointer;
     }
-    
+
     .menu-item{
         .menu_price{
             margin-left: auto;
@@ -116,7 +116,7 @@ img{
                   margin-bottom: 10px;
                   display: flex;
                   align-items: flex-end;
-                  
+
                 }
                 .menu_tick{
                     background: $color-tertiary;
@@ -140,7 +140,7 @@ img{
     }.menu_tick:hover {
         margin-right: 0;
     }
-    
+
     .menu_description{
         overflow: hidden;
         margin-top: -10px;
@@ -155,7 +155,7 @@ img{
       padding: 20px;
       display: flex;
       align-items: flex-end;
-          
+
         }
         .menu_tick{
             background: $color-tertiary;
@@ -163,7 +163,7 @@ img{
             display: grid;
             place-items: center;
             margin-right: -46px;
-            
+
         }
     }
 .button{

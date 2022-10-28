@@ -26,10 +26,10 @@
         border: none;
         border-radius: 40px;
         cursor: pointer;
-    }
-    & button:hover{
-        @include zoom;
-        transition: all 200ms;
-        opacity: 0.9;
+        &:hover{
+            @include zoom;
+            transition: all 200ms;
+            opacity: 0.9;
+        }
     }
 }
