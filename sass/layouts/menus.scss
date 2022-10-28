@@ -1,9 +1,9 @@
 @import "../utils/color.scss";
 .restaurant{
     flex-basis: 33%;
-    columns: 1fr;
-    margin-left: 10px;
-    background: var($light-grey);
+    background: $light-grey;
+    width: 100%;
+
 
     h2{
         margin-left: 10px;
@@ -16,11 +16,12 @@
             gap: 10px;
             width: 98%;
             margin-bottom: 20px;
+            margin-left: 4px;
         @media(min-width:768px){
            display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 5%;
-            margin: 100px 10px 50px 0;
+            margin: 100px 10px 50px 10px;
             width: 98%;
         }
         @media(min-width:960px){

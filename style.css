@@ -130,15 +130,14 @@ header a {
 }
 .functioning i.fas {
   margin-right: 16px;
-  background-color: rgba(167, 167, 167, 0.5);
+  background-color: rgba(167, 167, 167, 0.431372549);
   font-size: 28px;
 }
 
 .restaurant {
   flex-basis: 33%;
-  columns: 1fr;
-  margin-left: 10px;
-  background: var(rgba(167, 167, 167, 0.431372549));
+  background: rgba(167, 167, 167, 0.431372549);
+  width: 100%;
 }
 .restaurant h2 {
   margin-left: 10px;
@@ -151,13 +150,14 @@ header a {
   gap: 10px;
   width: 98%;
   margin-bottom: 20px;
+  margin-left: 4px;
 }
 @media (min-width: 768px) {
   .restaurant .menus_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
-    margin: 100px 10px 50px 0;
+    margin: 100px 10px 50px 10px;
     width: 98%;
   }
 }
