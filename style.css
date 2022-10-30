@@ -12,12 +12,57 @@ body, html {
   padding: 0;
   background: #fafafa;
 }
-body h1, html h1 {
+body h1, body h2, html h1, html h2 {
   font-family: "Shrikhand", "sans serif";
 }
 body a, html a {
   text-decoration: none;
   color: inherit;
+}
+
+.loader {
+  position: fixed;
+  background: #fff;
+  height: 100%;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: fork 800ms 3s forwards;
+  display: grid;
+  place-items: center;
+}
+.loader .fork-loader {
+  animation: anim_fork 4s;
+  height: 50%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .loader .fork-loader {
+    height: 70%;
+    width: 90%;
+  }
+}
+@media (min-width: 960px) {
+  .loader .fork-loader {
+    height: 90%;
+    width: 90%;
+  }
+}
+@keyframes fork {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes anim_fork {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*HEADER*/
@@ -51,8 +96,14 @@ header a {
   align-items: center;
   justify-content: center;
 }
+.city i {
+  font-size: 20px;
+}
 .city h2 {
-  padding: 8px;
+  padding-left: 20px;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Roboto", "sans serif";
 }
 
 /* TITLE */
@@ -89,13 +140,13 @@ header a {
 
 .functioning {
   counter-reset: number;
-  margin: 120px 0 0 0;
+  margin-top: 30px;
   padding: 50px 30px 100px 30px;
   background: white;
 }
 .functioning ol {
   display: flex;
-  gap: 30px;
+  gap: 45px;
 }
 @media (max-width: 960px) {
   .functioning ol {
@@ -107,7 +158,6 @@ header a {
   list-style-type: none;
   position: relative;
   cursor: pointer;
-  background-color: rgba(167, 167, 167, 0.431372549);
   padding: 20px 20px;
   flex-grow: 1;
   border-radius: 16px;
@@ -116,58 +166,53 @@ header a {
 .functioning li::before {
   content: counter(number);
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -15px;
+  top: 20%;
+  left: -20px;
   counter-increment: number;
   color: white;
   background-color: #9356DC;
-  padding: 10px;
+  padding: 8px 13px;
   border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+.functioning li i.fas {
+  margin-right: 16px;
+  color: rgba(167, 167, 167, 0.431372549);
+  font-size: 20px;
+  font-weight: bold;
 }
 .functioning li:hover {
   transform: scale(1.03);
 }
-.functioning i.fas {
-  margin-right: 16px;
-  background-color: rgba(167, 167, 167, 0.431372549);
-  font-size: 28px;
+.functioning li:hover i.fas {
+  color: #9356DC;
 }
 
-.restaurant {
-  flex-basis: 33%;
-  background: rgba(167, 167, 167, 0.431372549);
-  width: 100%;
-}
 .restaurant h2 {
   margin-left: 10px;
   width: 30%;
 }
 .restaurant .menus_cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
+  display: grid;
+  gap: 25px;
   width: 98%;
+  height: 100%;
   margin-bottom: 20px;
   margin-left: 4px;
 }
 @media (min-width: 768px) {
   .restaurant .menus_cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
-    margin: 100px 10px 50px 10px;
-    width: 98%;
+    width: 96%;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 960px) {
   .restaurant .menus_cards {
     grid-template-columns: 1fr;
     gap: 25px;
-    width: 90%;
-    margin: inherit;
-    margin-left: 330px;
   }
 }
 .restaurant .menus_cards .new {
@@ -188,50 +233,50 @@ header a {
 
 .card {
   box-shadow: 2px 3px 13px -1px #000;
-  margin-bottom: 20px;
   position: relative;
-  height: 350px;
   width: 100%;
-  flex-grow: 1;
-  min-width: 300px;
+  height: 100%;
+  max-height: 250px;
   background-color: white;
   border-radius: 30px;
-  position: relative;
 }
 @media (min-width: 768px) {
   .card {
-    width: 100%;
-    height: 100%;
+    margin-left: 4%;
+  }
+  .card:hover {
+    transform: scale(1.03);
   }
 }
 @media (min-width: 960px) {
   .card {
-    width: 100%;
-    margin-left: -250px;
+    justify-content: center;
+    width: 98%;
+    margin-left: 3%;
   }
 }
-.card:hover {
-  transform: scale(1.03);
-}
 .card img {
-  height: 260px;
+  height: 75%;
   width: 100%;
   object-position: center;
   border-radius: 20px 20px 0 0;
 }
-.card h3, .card p {
+.card h3 {
   padding-left: 15px;
-  margin-top: 12px;
+  margin-top: 5px;
   color: black;
   text-decoration: none;
 }
 .card p {
+  padding-left: 15px;
   margin-top: -15px;
+  color: black;
+  text-decoration: none;
 }
 .card i {
   font-size: 30px;
   position: absolute;
-  top: 285px;
+  top: 80%;
   right: 15px;
 }
 .card i.fas {
@@ -249,7 +294,6 @@ header a {
 footer {
   background-color: rgb(87, 87, 87);
   padding: 20px;
-  margin-top: 80px;
   width: 100%;
 }
 footer h2 {
@@ -269,19 +313,29 @@ footer p {
   color: white;
 }
 
+/*    ANIMATION      */
 .category1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 3s;
+  animation: anim 1s linear forwards 2s;
 }
 
 .category2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 3.5s;
+  animation: anim 1s linear forwards 2.5s;
 }
 
 .category3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 4s;
+  animation: anim 1s linear forwards 3s;
 }
 
 @keyframes anim {
@@ -296,30 +350,6 @@ footer p {
   }
   100% {
     opacity: 1;
-  }
-}
-.loader {
-  position: fixed;
-  background: #ffffff;
-  height: 100%;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.9;
-  animation: disappear 400ms 2.3s forwards;
-  display: grid;
-  place-items: center;
-}
-.loader .gif-loader {
-  height: 100vh;
-  width: 100%;
-}
-
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
   }
 }
 img {
@@ -341,7 +371,7 @@ img {
 #menu_restaurant .title_menu_restaurant i {
   font-size: 30px;
   position: absolute;
-  top: 45px;
+  top: 30px;
   right: 15px;
 }
 #menu_restaurant .title_menu_restaurant i.fas {
@@ -355,36 +385,37 @@ img {
   opacity: 1;
   transform: scale(1.13);
 }
-
-.menus {
+#menu_restaurant .menus {
+  overflow: hidden;
   padding-top: 40px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 20px;
+  margin-left: 4px;
 }
 @media (min-width: 768px) {
-  .menus {
-    margin-left: 30px;
+  #menu_restaurant .menus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 960px) {
-  .menus {
+  #menu_restaurant .menus {
     margin-left: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.menus .menu-item {
+#menu_restaurant .menus .menu-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: flex;
   background-color: white;
   border-radius: 20px;
-  margin: 20px 20px 20px 0;
+  margin: 20px 10px 20px 3px;
   height: 70px;
-  overflow: hidden;
   box-shadow: 2px 3px 13px -1px #000;
   cursor: pointer;
 }
-.menus .menu-item .menu_price {
+#menu_restaurant .menus .menu-item .menu_price {
   margin-left: auto;
   font-weight: 900;
   padding: 20px 20px 0 0;
@@ -392,14 +423,15 @@ img {
   display: flex;
   align-items: flex-end;
 }
-.menus .menu-item .menu_tick {
+#menu_restaurant .menus .menu-item .menu_tick {
   background: #99e2d0;
   width: 55px;
   display: grid;
   place-items: center;
   margin-right: -56px;
+  flex-shrink: 0;
 }
-.menus .menu-item .menu_tick i {
+#menu_restaurant .menus .menu-item .menu_tick i {
   display: grid;
   place-items: center;
   background: white;
@@ -408,50 +440,71 @@ img {
   height: 25px;
   color: #99e2d0;
 }
-.menus .menu-item:hover .menu_tick {
+#menu_restaurant .menus .menu-item:hover .menu_tick {
   margin-right: 0;
 }
-.menus .menu_tick:hover {
+#menu_restaurant .menus .menu-item:hover .menu_tick i {
+  animation: rotate_tick 0.3s ease-in-out;
+}
+@keyframes rotate_tick {
+  0% {
+    transform: rotate(-250deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+#menu_restaurant .menus .menu_tick:hover {
   margin-right: 0;
 }
-.menus .menu_description {
+#menu_restaurant .menus .menu_description {
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-top: -10px;
   padding: 0 10px;
 }
-.menus p {
+#menu_restaurant .menus h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#menu_restaurant .menus p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-top: -20px;
 }
-.menus .menu_price {
+#menu_restaurant .menus .menu_price {
   margin-left: auto;
   font-weight: 900;
   padding: 20px;
   display: flex;
   align-items: flex-end;
 }
-.menus .menu_tick {
+#menu_restaurant .menus .menu_tick {
   background: #99e2d0;
   width: 45px;
   display: grid;
   place-items: center;
   margin-right: -46px;
 }
-
-.button {
+#menu_restaurant .button {
   display: flex;
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .button {
+  #menu_restaurant .button {
     margin-top: 80px;
   }
 }
 @media (min-width: 960px) {
-  .button {
+  #menu_restaurant .button {
     width: 300%;
+    margin-bottom: 80px;
   }
 }
-.button button {
+#menu_restaurant .button button {
   margin: 50px 0;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
@@ -464,14 +517,14 @@ img {
   cursor: pointer;
 }
 @media (min-width: 960px) {
-  .button button {
+  #menu_restaurant .button button {
     font-weight: 900;
     width: 80%;
     margin: 0 50px;
     height: 150%;
   }
 }
-.button :hover {
+#menu_restaurant .button :hover {
   transform: scale(1.03);
   transition: all 200ms;
   opacity: 0.9;
