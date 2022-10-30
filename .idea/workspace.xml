@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="modification footer">
-      <change beforePath="$PROJECT_DIR$/sass/base/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layouts/menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/menus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/restaurants.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
@@ -82,7 +81,7 @@
       <workItem from="1666864442485" duration="2483000" />
       <workItem from="1666913331369" duration="385000" />
       <workItem from="1666940507825" duration="21217000" />
-      <workItem from="1667040308995" duration="20814000" />
+      <workItem from="1667040308995" duration="21184000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667137549074</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="modification footer">
+      <created>1667138003519</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667138003519</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -379,6 +379,8 @@ img {
 }
 #menu_restaurant h2 {
   font-family: "Shrikhand", "sans serif";
+  width: 70%;
+  margin-top: 20px;
 }
 #menu_restaurant .title_menu_restaurant {
   padding: 10px 0 0 20px;
@@ -387,7 +389,7 @@ img {
   font-size: 30px;
   position: absolute;
   top: 30px;
-  right: 15px;
+  right: 30px;
 }
 #menu_restaurant .title_menu_restaurant i.fas {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);

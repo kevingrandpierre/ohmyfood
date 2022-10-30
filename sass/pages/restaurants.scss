@@ -52,6 +52,8 @@ img{
     background: white;
     h2{
         font-family: "Shrikhand", "sans serif";
+        width: 70%;
+        margin-top: 20px;
     }
 
 
@@ -62,7 +64,7 @@ img{
             font-size: 30px;
             position: absolute;
             top: 30px;
-            right: 15px;
+            right: 30px;
 
             &.fas {
                 background-image: linear-gradient(to top, $color-primary, $color-secondary);
