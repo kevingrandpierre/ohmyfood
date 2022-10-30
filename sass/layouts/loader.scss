@@ -9,16 +9,17 @@
   display: grid;
   place-items: center;
 
+
   .fork-loader{
     animation: anim_fork 4s;
     height: 50%;
     width: 100%;
     @media (min-width:768px){
         height: 70%;
-        width: 90%;
+        width: 60%;
     }
     @media (min-width:960px){
-        height: 90%;
+        height: 100%;
         width: 90%;
     }
   }

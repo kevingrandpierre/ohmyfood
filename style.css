@@ -40,12 +40,12 @@ body a, html a {
 @media (min-width: 768px) {
   .loader .fork-loader {
     height: 70%;
-    width: 90%;
+    width: 60%;
   }
 }
 @media (min-width: 960px) {
   .loader .fork-loader {
-    height: 90%;
+    height: 100%;
     width: 90%;
   }
 }
