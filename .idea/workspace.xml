@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/sass/layouts/loader.scss" afterDir="false" />
+    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="-modification of the animation only on the main page&#10;-responsive update&#10;-animation finalization&#10;-font change&#10;-adjustment of menu cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant1.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant2.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant3.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant4.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layouts/city.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/city.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layouts/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layouts/functioning.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/functioning.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layouts/menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/menus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layouts/title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/title.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/pages/restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/restaurants.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/utils/box-shadow.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/utils/box-shadow.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +86,7 @@
       <workItem from="1666864442485" duration="2483000" />
       <workItem from="1666913331369" duration="385000" />
       <workItem from="1666940507825" duration="21217000" />
-      <workItem from="1667040308995" duration="16720000" />
+      <workItem from="1667040308995" duration="18663000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -208,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666946512525</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="-modification of the animation only on the main page&#10;-responsive update&#10;-animation finalization&#10;-font change&#10;-adjustment of menu cards">
+      <created>1667133817479</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667133817479</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +237,8 @@
     <MESSAGE value="modify html and css" />
     <MESSAGE value="modify html" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="-modification of the animation only on the main page&#10;-responsive update&#10;-animation finalization&#10;-font change&#10;-adjustment of menu cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="-modification of the animation only on the main page&#10;-responsive update&#10;-animation finalization&#10;-font change&#10;-adjustment of menu cards" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

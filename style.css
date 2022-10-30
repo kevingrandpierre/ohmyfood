@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 /*GENERAL*/
+@import "../utils/box-shadow.css";
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -298,7 +299,7 @@ footer {
 }
 footer h2 {
   font-family: "Shrikhand", "sans serif";
-  font-size: 28px;
+  font-size: 20px;
   color: white;
   margin-top: 10px;
 }
@@ -309,7 +310,6 @@ footer i {
 }
 footer p {
   cursor: pointer;
-  width: 45%;
   color: white;
 }
 
@@ -403,6 +403,19 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+#menu_restaurant .menus h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+#menu_restaurant .menus h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #99e2d0;
+  margin-top: 5px;
+  margin-left: 2px;
+}
 #menu_restaurant .menus .menu-item {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -444,7 +457,7 @@ img {
   margin-right: 0;
 }
 #menu_restaurant .menus .menu-item:hover .menu_tick i {
-  animation: rotate_tick 0.3s ease-in-out;
+  animation: rotate_tick 0.7s ease-in-out;
 }
 @keyframes rotate_tick {
   0% {
