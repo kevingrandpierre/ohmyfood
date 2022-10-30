@@ -7,16 +7,16 @@
   box-sizing: border-box;
 }
 
-body, html {
+body, html, h2 {
   font-family: "Roboto", "sans serif";
   margin: 0;
   padding: 0;
   background: #fafafa;
 }
-body h1, body h2, html h1, html h2 {
+body h1, html h1, h2 h1 {
   font-family: "Shrikhand", "sans serif";
 }
-body a, html a {
+body a, html a, h2 a {
   text-decoration: none;
   color: inherit;
 }
@@ -192,6 +192,7 @@ header a {
 
 .restaurant h2 {
   margin-left: 10px;
+  margin-bottom: 20px;
   width: 30%;
 }
 .restaurant .menus_cards {
@@ -298,7 +299,7 @@ footer {
   width: 100%;
   bottom: 0;
 }
-footer h2 {
+footer h3 {
   font-family: "Shrikhand", "sans serif";
   font-size: 20px;
   color: white;
@@ -375,6 +376,9 @@ img {
   border-radius: 40px 40px 0 0;
   margin-top: -80px;
   background: white;
+}
+#menu_restaurant h2 {
+  font-family: "Shrikhand", "sans serif";
 }
 #menu_restaurant .title_menu_restaurant {
   padding: 10px 0 0 20px;
