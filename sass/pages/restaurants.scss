@@ -54,6 +54,7 @@ img{
         font-family: "Shrikhand", "sans serif";
         width: 70%;
         margin-top: 20px;
+        background-color: inherit;
     }
 
 
@@ -155,6 +156,7 @@ img{
                 margin-right: 0;
                 & i {
                     animation: rotate_tick 0.7s ease-in-out;
+
                 }
                 @keyframes rotate_tick {
                     0% {
@@ -164,6 +166,7 @@ img{
                         transform: rotate(0);
                     }
                 }
+
             }
         }
 

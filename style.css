@@ -46,7 +46,7 @@ body a, html a, h2 a {
 @media (min-width: 960px) {
   .loader .fork-loader {
     height: 100%;
-    width: 90%;
+    width: 70%;
   }
 }
 @keyframes fork {
@@ -381,6 +381,7 @@ img {
   font-family: "Shrikhand", "sans serif";
   width: 70%;
   margin-top: 20px;
+  background-color: inherit;
 }
 #menu_restaurant .title_menu_restaurant {
   padding: 10px 0 0 20px;
