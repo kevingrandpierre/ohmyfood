@@ -326,7 +326,7 @@ footer p {
   text-overflow: ellipsis;
   white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 2s;
+  animation: anim 1s linear forwards 1s;
 }
 
 .category2 {
@@ -334,7 +334,7 @@ footer p {
   text-overflow: ellipsis;
   white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 2.5s;
+  animation: anim 1s linear forwards 2s;
 }
 
 .category3 {
