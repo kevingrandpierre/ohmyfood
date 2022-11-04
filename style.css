@@ -469,6 +469,7 @@ img {
   place-items: center;
   margin-right: -56px;
   flex-shrink: 0;
+  transition: all 2s;
 }
 #menu_restaurant .menus .menu-item .menu_tick i {
   display: grid;
@@ -483,7 +484,7 @@ img {
   margin-right: 0;
 }
 #menu_restaurant .menus .menu-item:hover .menu_tick i {
-  animation: rotate_tick 0.7s ease-in-out;
+  animation: rotate_tick 1.8s ease-in-out;
 }
 @keyframes rotate_tick {
   0% {
@@ -492,6 +493,9 @@ img {
   100% {
     transform: rotate(0);
   }
+}
+#menu_restaurant .menus .menu-item .menu_tick::after {
+  transition: all 3s;
 }
 #menu_restaurant .menus .menu_description {
   overflow: hidden;

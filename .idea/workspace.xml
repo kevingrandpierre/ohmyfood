@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment=".">
+    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="code cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/pages/restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/restaurants.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -85,7 +85,7 @@
       <workItem from="1667040308995" duration="21435000" />
       <workItem from="1667150464823" duration="4329000" />
       <workItem from="1667550210271" duration="189000" />
-      <workItem from="1667550408428" duration="14815000" />
+      <workItem from="1667550408428" duration="16474000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -283,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667584315971</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="code cleanup">
+      <created>1667585712993</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1667585712993</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +327,8 @@
     <MESSAGE value="add comments in the code" />
     <MESSAGE value="add picture description alt" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
