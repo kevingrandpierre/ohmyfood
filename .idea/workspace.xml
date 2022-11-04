@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="modification animation delay">
-      <change beforePath="$PROJECT_DIR$/sass/pages/restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/restaurants.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <workItem from="1667040308995" duration="21435000" />
       <workItem from="1667150464823" duration="4329000" />
       <workItem from="1667550210271" duration="189000" />
-      <workItem from="1667550408428" duration="17283000" />
+      <workItem from="1667550408428" duration="20333000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -295,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667587242394</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="modification animation delay">
+      <created>1667589124135</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1667589124135</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
