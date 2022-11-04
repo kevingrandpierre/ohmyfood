@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="modification animation delay">
+    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="contact email prefill">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layouts/functioning.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/functioning.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layouts/menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layouts/menus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,7 @@
       <workItem from="1667040308995" duration="21435000" />
       <workItem from="1667150464823" duration="4329000" />
       <workItem from="1667550210271" duration="189000" />
-      <workItem from="1667550408428" duration="20333000" />
+      <workItem from="1667550408428" duration="21199000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -302,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667589124135</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="contact email prefill">
+      <created>1667597522780</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1667597522780</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +351,8 @@
     <MESSAGE value="." />
     <MESSAGE value="code cleanup" />
     <MESSAGE value="modification animation delay" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification animation delay" />
+    <MESSAGE value="contact email prefill" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact email prefill" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
