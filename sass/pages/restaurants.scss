@@ -75,8 +75,7 @@ img{
                 -webkit-background-clip: text;
                 color: transparent;
                 opacity: 0;
-                transition: all 300ms;
-            }
+                transition: all 1.1s;            }
 
             &.fas:hover {
                 opacity: 1;
@@ -95,7 +94,6 @@ img{
             grid-template-columns: repeat(2, 1fr);
         }
         @media (min-width: 960px) {
-            margin-left: 30px;
             grid-template-columns: repeat(3, 1fr);
         }
         h3{
@@ -151,7 +149,6 @@ img{
                     width: 25px;
                     height: 25px;
                     color: $color-tertiary;
-
                 }
             }
 /*ANIMATION DU PLAT SELECTIONNE DANS LE MENU*/
@@ -181,8 +178,9 @@ img{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            margin-top: -10px;
+            margin-top: -12px;
             padding: 0 10px;
+
         }
 
         h4{
@@ -194,7 +192,8 @@ img{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            margin-top: -20px;
+            margin-top: -10px;
+            font-weight: 300;
         }
 
     }
