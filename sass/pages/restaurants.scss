@@ -16,14 +16,14 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     opacity:0;
-    animation: anim 1s linear forwards 2s;
+    animation: anim 1s linear forwards 1.5s;
 }
 .category3 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     opacity:0;
-    animation: anim 1s linear forwards 3s;
+    animation: anim 1s linear forwards 2s;
 }
 
 @keyframes anim {
@@ -123,9 +123,7 @@ img{
             height: 70px;
             @include box-shadow;
             cursor: pointer;
-        }
 
-        .menu-item {
             .menu_price {
                 margin-left: auto;
                 font-weight: 900;
@@ -172,9 +170,6 @@ img{
             }
         }
 
-        .menu_tick:hover {
-            margin-right: 0;
-        }
 
         .menu_description {
             overflow: hidden;
@@ -196,23 +191,6 @@ img{
             margin-top: -20px;
         }
 
-        .menu_price {
-            margin-left: auto;
-            font-weight: 900;
-            padding: 20px;
-            display: flex;
-            align-items: flex-end;
-
-        }
-
-        .menu_tick {
-            background: $color-tertiary;
-            width: 45px;
-            display: grid;
-            place-items: center;
-            margin-right: -46px;
-
-        }
     }
 
     .button {

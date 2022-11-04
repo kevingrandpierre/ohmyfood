@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment="add picture description alt">
+    <list default="true" id="78ff4aa9-9b03-47fa-8b9a-ce73f956ca92" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/pages/restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/restaurants.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1667040308995" duration="21435000" />
       <workItem from="1667150464823" duration="4329000" />
       <workItem from="1667550210271" duration="189000" />
-      <workItem from="1667550408428" duration="13472000" />
+      <workItem from="1667550408428" duration="14815000" />
     </task>
     <task id="LOCAL-00001" summary="add progressive menu display">
       <created>1664229672897</created>
@@ -275,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667580985761</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary=".">
+      <created>1667584315971</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667584315971</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +312,6 @@
     <MESSAGE value="end of project" />
     <MESSAGE value="modify html and css" />
     <MESSAGE value="modify html" />
-    <MESSAGE value="." />
     <MESSAGE value="-modification of the animation only on the main page&#10;-responsive update&#10;-animation finalization&#10;-font change&#10;-adjustment of menu cards" />
     <MESSAGE value="change size of image" />
     <MESSAGE value="modification footer" />
@@ -312,7 +319,8 @@
     <MESSAGE value="modification loader" />
     <MESSAGE value="add comments in the code" />
     <MESSAGE value="add picture description alt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add picture description alt" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

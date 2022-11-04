@@ -334,7 +334,7 @@ footer p {
   text-overflow: ellipsis;
   white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 2s;
+  animation: anim 1s linear forwards 1.5s;
 }
 
 .category3 {
@@ -342,7 +342,7 @@ footer p {
   text-overflow: ellipsis;
   white-space: nowrap;
   opacity: 0;
-  animation: anim 1s linear forwards 3s;
+  animation: anim 1s linear forwards 2s;
 }
 
 @keyframes anim {
@@ -452,8 +452,6 @@ img {
   height: 70px;
   box-shadow: 2px 3px 13px -1px #000;
   cursor: pointer;
-}
-#menu_restaurant .menus .menu-item {
   /*ANIMATION DU PLAT SELECTIONNE DANS LE MENU*/
 }
 #menu_restaurant .menus .menu-item .menu_price {
@@ -495,9 +493,6 @@ img {
     transform: rotate(0);
   }
 }
-#menu_restaurant .menus .menu_tick:hover {
-  margin-right: 0;
-}
 #menu_restaurant .menus .menu_description {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -515,20 +510,6 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-top: -20px;
-}
-#menu_restaurant .menus .menu_price {
-  margin-left: auto;
-  font-weight: 900;
-  padding: 20px;
-  display: flex;
-  align-items: flex-end;
-}
-#menu_restaurant .menus .menu_tick {
-  background: #99e2d0;
-  width: 45px;
-  display: grid;
-  place-items: center;
-  margin-right: -46px;
 }
 #menu_restaurant .button {
   display: flex;
