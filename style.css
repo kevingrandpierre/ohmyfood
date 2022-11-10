@@ -397,6 +397,7 @@ img {
   img {
     object-position: center;
     object-fit: cover;
+    height: 450px;
   }
 }
 
@@ -506,7 +507,7 @@ img {
   margin-right: 0;
 }
 #menu_restaurant .menus .menu-item:hover .menu_tick i {
-  animation: rotate_tick 1.8s ease-in-out;
+  animation: rotate_tick 1.5s ease-in-out;
 }
 @keyframes rotate_tick {
   0% {
@@ -517,7 +518,7 @@ img {
   }
 }
 #menu_restaurant .menus .menu-item .menu_tick::after {
-  transition: all 3s;
+  transition: all 2s;
 }
 #menu_restaurant .menus .menu_description {
   overflow: hidden;
